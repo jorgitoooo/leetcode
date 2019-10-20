@@ -10,13 +10,9 @@
 #include <iostream>
 #include <set>
 
-using namespace std;
+#include "listnode.h"
 
-typedef struct ListNode {
-  int val;
-  ListNode *next;
-  ListNode(int x) : val(x), next(NULL) {}
-} ListNode;
+using namespace std;
 
 ListNode *getIntersectionNode(ListNode *headA, ListNode *headB)
 {
